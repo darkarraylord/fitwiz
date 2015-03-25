@@ -28,6 +28,8 @@ require('inc/sidebar.php');
                     <b>Trainning A:</b>
                     
                     <?php
+                    error_reporting(E_ALL);
+
                     $mysqli = new mysqli("localhost", "root", "12OfAd9c6bNDfcBV", "zadmin_fitwiz");
                     if ($mysqli->connect_errno) {
                         echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
