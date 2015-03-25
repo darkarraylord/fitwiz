@@ -30,7 +30,7 @@ require('inc/sidebar.php');
                     <?php
                     error_reporting(E_ALL);
 
-                    $mysqli = new mysqli("localhost", "root", "12OfAd9c6bNDfcBV", "zadmin_fitwiz");
+                    $mysqli = new mysqli("127.0.0.1", "root", "12OfAd9c6bNDfcBV", "zadmin_fitwiz");
                     if ($mysqli->connect_errno) {
                         echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
                     }
