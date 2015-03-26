@@ -28,12 +28,12 @@ require('inc/sidebar.php');
                     <b>Trainning A:</b>
                     
                     <?php
-                    $mysqli = new mysqli("localhost", "root", "", "zadmin_fitwiz");
+                    $mysqli = new mysqli("localhost", "root", "12OfAd9c6bNDfcBV", "zadmin_fitwiz");
                     if ($mysqli->connect_errno) {
                         echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
                     }
 
-                    if ($result = $mysqli->query("SELECT * FROM exercices")) {
+                    if ($result = $mysqli->query("SELECT * FROM EXERCICES")) {
                          while ( $exercices = mysqli_fetch_array($result)) {
                           $exercice = strtolower(str_replace(" ", "-", $exercices['TITLE']));
                           $title = $exercices['TITLE'];
